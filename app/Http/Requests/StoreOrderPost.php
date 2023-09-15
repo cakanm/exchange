@@ -26,14 +26,14 @@ class StoreOrderPost extends FormRequest
         return [
             'source_currency_code' => 'required|string|max:3',
             'currency_code' => 'required|string|max:3',
-            'exchange_rate' => 'required|numeric:0,6',
-            'surcharge_percent' => 'required|numeric:0,2',
-            'surcharge_amount' => 'required|numeric:0,2',
-            'discount_percent' => 'required|numeric:0,2',
-            'discount_amount' => 'required|numeric:0,2',
-            'source_currency_amount' => 'required|numeric:0,2',
-            'currency_amount' => 'required|numeric:0,2',
-            'source_total' => 'required|numeric:0,2',
+            'exchange_rate' => 'required|numeric',
+            'surcharge_percent' => 'required|numeric',
+            'surcharge_amount' => 'required|numeric',
+            'discount_percent' => 'required|numeric',
+            'discount_amount' => 'required|numeric',
+            'source_currency_amount' => 'required|numeric',
+            'currency_amount' => 'required|numeric',
+            'source_total' => 'required|numeric',
         ];
     }
 }
